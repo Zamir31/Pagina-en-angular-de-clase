@@ -1,5 +1,5 @@
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="{{url}}">{{nombreLink}}</a>
+    <li class="nav-item" *ngFor="let element of enlaces">
+      <a class="nav-link active" aria-current="page" href="{{element.url}}">{{element.nombreLink}}</a>
     </li>
     <!-- <li class="nav-item">
       <a class="nav-link" href="#">Link</a>
